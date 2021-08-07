@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="dedi" />
+    <title>Parking App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <button class="btnSet" onclick="fnInputQty()">
+        Set Number of Slot Parking
+      </button>
+      <button class="cek-profit" onclick="fnCekProfit()">Check Profit</button>
+      <button class="close" onclick="fnClose()">Exit</button>
+    </div>
+    <div class="in-out">
+      <button id="in" class="in" onclick="btnIn()">Car In</button>
+      <button id="out" class="out" onclick="btnOut()">Car Out</button>
+    </div>
+    <div>
+      <fieldset class="legend">
+        <div class="slot-legend"></div>
+        <small>Empty</small>
+        <div class="slot-legend parked"></div>
+        <small>Used</small>
+      </fieldset>
+    </div>
+    <div class="container">
+      <div id="parking-area" class="parking-area">
+        <!-- <div class="slot"></div> -->
+      </div>
+      <div id="status" class="status">
+        <h2>Status</h2>
+        <p>Slot Used: <span id="slot-used">0</span></p>
+        <p>Empty Slot: <span id="empty-slot">0</span></p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

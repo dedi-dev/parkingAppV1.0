@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3557;
+  color: white;
+}
+
+button {
+  background-color: #a8dadc;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 900;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: #ffb703;
+}
+
+.menu {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.btnSet {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.container {
+  display: flex;
+}
+
+.status {
+  padding: 2em;
+}
+
+.parking-area {
+  width: 40vw;
+  padding: 1em;
+  margin-top: 1em;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slot {
+  width: 3em;
+  height: 6em;
+  border: 1px solid black;
+  margin: 3em 0.5em;
+  background-color: #f1faee;
+  border-radius: 5px;
+}
+.slot.parked {
+  width: 3em;
+  height: 6em;
+  border: 1px solid black;
+  margin: 3em 0.5em;
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px;
+}
+
+.legend {
+  padding: 5px;
+  margin-top: 2em;
+  width: 8em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.legend div {
+  display: inline-block;
+}
+
+.legend .slot-legend {
+  width: 0.5em;
+  height: 1em;
+  border: 1px solid black;
+  margin: 0;
+  background-color: #f1faee;
+  border-radius: 5px;
+}
+
+.legend .slot-legend.parked {
+  width: 0.5em;
+  height: 1em;
+  border: 1px solid black;
+  margin: 0;
+  background-color: #e63946;
+  color: white;
+  margin-left: 1em;
+  border-radius: 5px;
+}
+
+/* .slot:nth-of-type(10n + 5) {
+  margin-right: 4em;
+} */
